@@ -1,4 +1,4 @@
-package org.michael.services;
+package org.michael;
 
 
 import org.springframework.boot.SpringApplication;
