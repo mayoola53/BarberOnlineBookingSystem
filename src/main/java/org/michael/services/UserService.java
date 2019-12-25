@@ -22,15 +22,19 @@ public class UserService {
     public UserEntity getById(int userId){
         return userRepository.findById(userId).get();
     }
+
     public void addUser(UserEntity newUser){
         userRepository.save(newUser);
     }
+
     public void removeUser(int userId){
         userRepository.deleteById(userId);
     }
+
     public void removeUser(UserEntity user){
         userRepository.delete(user);
     }
+
     public UserEntity editUser(UserEntity editUser,int userId){
         editUser.setUserId(userId);
         userRepository.save(editUser);
