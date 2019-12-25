@@ -32,7 +32,7 @@ public class UserController {
     @PostMapping("/user/addUser")
     public String addUser(@Valid UserEntity newUser){
         userService.addUser(newUser);
-        return "";
+        return "registerUser";
     }
 
     @GetMapping("/user/editUser/{id}")
