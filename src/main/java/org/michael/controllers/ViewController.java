@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ViewController {
     @GetMapping("/indexPage")
     public String viewIndexPage(){
-        return "registerUser";
+        return "registerBarber";
     }
 }
