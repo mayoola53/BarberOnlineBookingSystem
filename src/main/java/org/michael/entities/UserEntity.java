@@ -1,9 +1,8 @@
 package org.michael.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class UserEntity {
@@ -18,6 +17,8 @@ public class UserEntity {
     private String email;
     private String contactNumber;
 
+    @OneToMany(mappedBy = "barber")
+    private List<BookingEntity> bookingEntities = new ArrayList<>();
 
 
 
